@@ -1,7 +1,7 @@
 describe("blinkyDancer", function() {
 
   var blinkyDancer;
-  var timeBetweenSteps = 100;
+  var timeBetweenSteps = 1000;
   var clock;
 
   beforeEach(function() {
@@ -10,7 +10,6 @@ describe("blinkyDancer", function() {
   });
 
   it("should have a jQuery $node object", function(){
-    console.log("From spec " + blinkyDancer);
     expect(blinkyDancer.$node).to.be.an.instanceof(jQuery);
   });
 
