@@ -7,7 +7,7 @@ var makeDancer = function(top, left, timeBetweenSteps){
 
   // use jQuery to create an HTML <span> tag
   this.$node = $('<span class="dancer"></span>');
-
+ console.log("makeDancer")
 };
 
 //Add methods to the fall back object
@@ -15,22 +15,21 @@ var makeDancer = function(top, left, timeBetweenSteps){
 makeDancer.prototype.step = function(){
     // the basic dancer doesn't do anything interesting at all on each step,
     // it just schedules the next step
-    setTimeout(makeDancer.prototype.step, timeBetweenSteps);
- 
-  makeDancer.prototype.step;
- };
+    setTimeout(this.step.bind(this), this.timeBetweenSteps);
+  };
 
-  makeDancer.prototype.setPosition = function(top, left){
+makeDancer.prototype.setPosition = function(top, left){
     // Use css top and left properties to position our <span> tag
     // where it belongs on the page. See http://api.jquery.com/css/
-    //
+    
     var styleSettings = {
-      top: top,
-      left: left
+      top: this.top,
+      left: this.left
     };
-    makeDancer.prototype.$node.css(styleSettings);
+    this.$node.css(styleSettings);
   };
 
   // now that we have defined the makeDancer.prototype object, we can start setting up important parts of it by calling the methods we wrote
   // this one sets the position to some random default point within the body
-  dancer.setPosition(top, left);
+  // var dancer = new makeDancer(0,10,100);
+  // dancer.setPosition(this.top, this.left);
