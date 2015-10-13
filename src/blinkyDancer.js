@@ -4,10 +4,8 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
   
   this.$node = $('<span class="blinkyDancer"></span>');
 
-  this.step();
+  //this.step();
 
-  this.setPosition(top, left);
-  
 };
 
 //set the prototype
