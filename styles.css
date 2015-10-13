@@ -42,13 +42,18 @@ body, a:link, a:visited, a:active{
 }
 
 .dancingBanana {
-  border:10px solid green;
-  border-radius:10px;
+  background:url(assets/banana.gif);
   position:absolute;
+  display:inline-block;
+  height:50px;
+  width:50px;
+
 }
 
 .dancingBaby {
-  border:10px solid white;
-  border-radius:10px;
+  background:url(assets/dancingBaby.gif);
   position:absolute;
+  display:inline-block;
+  height:200px;
+  width:150px;
 }
