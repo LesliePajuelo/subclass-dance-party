@@ -41,10 +41,12 @@ $(document).ready(function(){
 
   $(document).on('mousemove',function(e){
     $('.follow').css({
-      left: e.pageX-75,
-      top: e.pageY-75
+      left: e.pageX-60,
+      top: e.pageY-30
     });
   })
+
+  //if baby gets close to banana have banana span get larger for moar bananas
 
     
 
