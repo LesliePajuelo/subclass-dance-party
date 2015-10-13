@@ -9,6 +9,8 @@ var makeDancer = function(top, left, timeBetweenSteps){
   this.$node = $('<span class="dancer"></span>');
 
   this.step();
+
+  this.setPosition(top, left);
  };
 
 //Add methods to the fall back object
@@ -24,8 +26,8 @@ makeDancer.prototype.setPosition = function(top, left){
     // where it belongs on the page. See http://api.jquery.com/css/
     
     var styleSettings = {
-      top: this.top,
-      left: this.left
+      top: top,
+      left: left
     };
     this.$node.css(styleSettings);
   };
