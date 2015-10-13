@@ -31,3 +31,11 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.dancefloor {
+  background-image:url(assets/dance-floor.jpg);
+  background-size:cover;
+  position:relative;
+  height: 100%;
+  width: 100%;
+}
