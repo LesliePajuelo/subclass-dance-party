@@ -2,7 +2,7 @@ var makeBanana = function(top, left, timeBetweenSteps){
   
   makeDancer.call(this, top, left, timeBetweenSteps);
   
-  this.$node = $('<span class="blinkyDancer"></span>');
+  this.$node = $('<span class="dancingBanana"></span>');
 
   this.setPosition(top, left);
   

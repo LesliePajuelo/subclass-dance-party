@@ -20,6 +20,15 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+
+.dancefloor {
+  background-image:url(assets/dance-floor.jpg);
+  background-size:cover;
+  position:relative;
+  height: 100%;
+  width: 100%;
+}
+
 .dancer{
   border:10px solid yellow;
   border-radius:10px;
@@ -32,10 +41,14 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.dancefloor {
-  background-image:url(assets/dance-floor.jpg);
-  background-size:cover;
-  position:relative;
-  height: 100%;
-  width: 100%;
+.dancingBanana {
+  border:10px solid green;
+  border-radius:10px;
+  position:absolute;
+}
+
+.dancingBaby {
+  border:10px solid white;
+  border-radius:10px;
+  position:absolute;
 }
