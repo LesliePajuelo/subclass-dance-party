@@ -39,6 +39,13 @@ $(document).ready(function(){
     }
   });
 
+  $(document).on('mousemove',function(e){
+    $('.follow').css({
+      left: e.pageX-75,
+      top: e.pageY-75
+    });
+  })
+
     
 
 

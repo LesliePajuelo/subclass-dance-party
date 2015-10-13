@@ -57,3 +57,11 @@ body, a:link, a:visited, a:active{
   height:200px;
   width:150px;
 }
+
+.dogDancer {
+  background:url(assets/dog.gif);
+  position:absolute;
+  display:inline-block;
+  height:200px;
+  width:150px;
+}
