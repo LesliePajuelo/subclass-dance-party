@@ -33,5 +33,8 @@ makeDancer.prototype.setPosition = function(top, left){
   };
 
 makeDancer.prototype.lineup = function(){
-  console.log("moo")
+  this.$node.animate({
+    left:50
+  })
+
 };
