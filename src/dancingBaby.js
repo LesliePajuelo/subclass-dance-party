@@ -6,6 +6,8 @@ var makeBaby = function(top, left, timeBetweenSteps){
 
   this.setPosition(top, left);
   this.step();
+
+  this.neighbor = false;
   
 };
 
@@ -19,8 +21,9 @@ makeBaby.prototype.constructor = makeBaby;
 
 //methods
 
-makeBlinkyDancer.prototype.step = function(){
+makeBaby.prototype.step = function(){
   makeDancer.prototype.step.call(this);
 
-    this.$node.toggle();
+    this.$node.fadeToggle('slow');
 };
+

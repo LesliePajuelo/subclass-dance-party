@@ -45,11 +45,45 @@ $(document).ready(function(){
       top: e.pageY-30
     });
   })
+})
 
-  //if baby gets close to banana have banana span get larger for moar bananas
 
+//********************** calculating whether images are close to each other ********************************///////
+// var overlaps = function(obj) {
+// //Create an object to hold the targets and to register if something has been hit
     
+//   var elements = {targets: [], hits:[]};
 
+// //for each element in elements
+//   this.each(function() {
+//     //Find the offset for each element on the screen
+//   var bounds = $(this).offset();
+      
+//   bounds.right = bounds.left + $(this).outerWidth();
+//   bounds.bottom = bounds.top + $(this).outerHeight();
+  
+//   //call offset on the object passed in
+//   var compare = $(obj).offset();
+  
+//   //jquery only returns left and right sides but outerX + left/top will
+//   //give the total size
+//   compare.right = compare.left + $(obj).outerWidth();
+//   compare.bottom = compare.top + $(obj).outerHeight();
 
-});
+//   //do ALL the comparing, if any of them are true then
+//   //add the element on the page to targets and add the object to hits
+//   if (!(compare.right < bounds.left ||
+//     compare.left > bounds.right ||
+//     compare.bottom < bounds.top ||
+//     compare.top > bounds.bottom)) 
+//   {
+//     elements.targets.push(this);
+//     elements.hits.push(obj);
+//   }
+// });
+//   return elements;
+// });
 
+//Follow the readme
+//Iterate through the window.dancers array
+//Compare the position of first object tothe second if the answer is less than 50px set off animation
